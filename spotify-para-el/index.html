@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Para Ti ❤️</title>
+
+<style>
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#121212,#191414);
+font-family:Arial;
+color:white;
+}
+
+.card{
+background:#181818;
+padding:30px;
+width:340px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 0 30px rgba(0,0,0,.5);
+}
+
+img{
+width:220px;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:15px;
+}
+
+button{
+margin-top:20px;
+background:#1DB954;
+border:none;
+padding:12px 25px;
+color:white;
+font-size:16px;
+border-radius:30px;
+cursor:pointer;
+}
+
+#mensaje{
+display:none;
+margin-top:20px;
+font-size:18px;
+line-height:1.6;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+
+<img src="foto.jpg.jpeg" alt="foto">
+<h2>Nuestra canción ✨</h2>
+
+<p>Presiona play 🎵</p>
+
+<a href="https://www.youtube.com/watch?v=HDZTwUTytrA" target="_blank">
+<button>🎵 Escucha </button>
+</a>
+
+<button onclick="mostrarMensaje()">❤️ Abrir mensaje</button>
+
+<div id="mensaje">
+Gracias por llegar a mi vida.
+
+Quería regalarte algo pequeño,
+pero hecho con mucho cariño.
+
+Cada vez que escuches esta canción,
+quiero que recuerdes lo especial que eres para mí.
+
+❤️
+</div>
+
+</div>
+
+<script>
+function mostrarMensaje(){
+document.getElementById("mensaje").style.display="block";
+}
+</script>
+
+</body>
+</html>
